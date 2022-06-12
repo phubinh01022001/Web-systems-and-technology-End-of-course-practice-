@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.1.3-dist/css/bootstrap.css">
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+    <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <style>
+        li {list-style-type: none;}
+        a{text-decoration: none;color: white;}
+        .loai{margin: 30px;font-size: x-large;color:black;}
+
+        li:hover{background-color: black;}
+        li:hover a{color: white;}
+        .pc:hover{width: 105%;height: 70%;position: relative;}
+        
+    </style>
+    <script>
+        $("document").ready(function(){
+            $("#diadiem").change(function(){
+                var dd=$("#diadiem option:selected").val();
+                var dc=dd;
+                $("#dchi").val(dc);
+                $("#dchi").html(dc);
+            })
+            $(".them").click(function(){
+                alert("Thêm thành công và giỏ hàng!!");
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="contanier">
+        <div class="row col-12 text-lg-center bg-dark text-white">
+            <div class="col-1 pl-0">
+                <a href="../html/TrangChu.html">
+                    <b style="font-size:x-large;font-family:initial;text-shadow: 3px 3px 3px red;margin-left: 20px;">
+                        Bphonee&sect;</b>
+                </a>
+            </div>
+            <div class="col-3 pt-2">
+                <span id="" name="" >Địa điểm &#9658;</span>
+                <select name="diadiem" id="diadiem">
+                    <option value="12,quận 12,tp HCM" selected="selected">Tp Hồ Chí Minh</option>
+                    <option value="10,Tây Hồ,Hà Nội">Hà Nội</option>
+                    <option value="16/b,tp Huế">Huế</option>
+                    <option value="52c/5,tp Bình Dương">Bình Dương</option>
+                    <option value="17c/2,tỉnh Bến Tre">Bến Tre</option>
+                    <option value="172b, tp Cà Mau">Cà Mau</option>
+                </select>
+            </div>
+            <div class="col-4 pt-2">
+                <input class="w-75 h-75 p-2" type="text" name="" id="" placeholder="Bạn cần tìm gì?">
+            </div>
+            <div class="row col-2 ">
+                <div class="col-1 pt-1 pl-0 mr-4">
+                    <a href="../html/ThongTin.html" style="color: white;font-size: x-large;">
+                        <i class="fas fa-users"></i></a>
+                </div>
+                <div class="col-9 pt-2 pl-2"><span>☏ 0374123411</span>
+                </div>
+            </div>
+            <div class="row col-2">
+                <button type="button" class=" col-7 btn btn-dark pl-0">
+                    <a class="col-8 mr-2 pl-0" style="color: white;font-size: large;" href="../html/GioHang.html">
+                        <i class="fas fa-cart-plus"></i>
+                        <span> Giỏ hàng</span>
+                    </a>
+                </button>
+                <button type="button" class="col-5 btn btn-dark ">
+                    <a class="" style="color: white;font-size: larger;" href="../html/User.html">
+                        <i class="fas fa-user"></i>
+                        <span style="">User</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        
+        <div class="col-12 row">
+            <nav class="col-3 p-3">
+                <p><b style="color: red;font-size:large;background-color: bisque;padding:6px; border-radius: 5px 5px 5px;">Thương hiệu:</b></p>
+                <ul >
+                  <li><a class="loai mb-1 p-1"  href="../html/apple.html">Apple
+                    <i class="fab fa-apple"></i>
+                    </li></a>
+                  <li><a class="loai mb-1 p-1" href="../html/samsung.html">Samsung
+                    <img src="../img/samsung.jpg" style="width:20%">    
+                    </a></li>
+                  <li><a class="loai mb-1 p-1" href="../html/oppo.html">Oppo
+                    <img src="../img/oppo.JPG" style="width:20%">
+                  </a></li>
+                  <li><a class="loai mb-1 p-1" href="../html/Vsmart.html">Vsmart
+                      <img src="../img/vsmart.JPG" style="width:21%"> 
+                  </a></li>
+                  <li><a class="loai mb-1 p-1" href="../html/Xiaomi.html">Xiaomi
+                      <img src="../img/xiaomi.JPG" style="width:10%">
+                  </a></li>
+                  <li><a class="loai mb-1 p-1" href="../html/Nokia.html">Nokia
+                      <img src="../img/nokia.JPG" style="width:20%">
+                  </a></li>
+                  <li><a class="loai mb-1 p-1" href="../html/Asus.html">Asus
+                      <img src="../img/asus.JPG" style="width:17%" >
+                  </a></li>
+                </ul>
+            </nav>
+
+
+
+
+
+            <div class="col-7 p-2">
+                <div style="width:100%;height: 500px;margin: auto;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-item active w-50 h-50">
+                                <img class="d-block" style="width:800px;height:500px;" src="../img/hinhchay4.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item w-50 h-50">
+                                <img class="d-block" style="width:800px;height: 500px;" src="../img/hinhchay5.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item w-50 h-50">
+                                <img class="d-block" style="width:800px;height: 500px;" src="../img/hinhchay1.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item w-50 h-50">
+                                <img class="d-block" style="width:800px;height: 500px;" src="../img/hinhchay2.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item w-50 h-50">
+                                <img class="d-block" style="width:800px;height: 500px;" src="../img/hinhchay3.jpg" alt="Third slide">
+                            </div>
+                            <a class="carousel-control-prev " href="#carouselExampleSlidesOnly" role="button " data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only ">Previous</span>
+                            </a>
+                            <a class="carousel-control-next " href="#carouselExampleSlidesOnly" role="button " data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true "></span>
+                                <span class="sr-only ">Next</span>
+                            </a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-2 p-3">
+                <p><b><i class="fas fa-location-arrow"></i> Địa chỉ cửa hàng:</b></p><br>
+                <div id="dchi" style="font-size: x-large;"></div>
+            </div>
+        </div>
+        <div class="border col-12 m-auto">
+            <div class="row col-10 m-auto p-lg-4 ">
+                <div class="col-2">
+                    <img class="pc w-100" src="../img/dtA111.JPG">
+                        <p class="text-center"><b>Samsung Z Flip<br>19.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA2.JPG">
+                        <p class="text-center"><b>Iphone 12 Pro Max<br>30.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA444.JPG">
+                        <p class="text-center"><b>Samsung S21 Ultra<br>22.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA222.JPG">
+                        <p class="text-center"><b>Samsung S20+<br>15.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtX111.JPG">
+                        <p class="text-center"><b>Xiaomi Mi 10T Pro<br>11.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA4.JPG">
+                        <p class="text-center"><b>Iphone 11 Pro<br>19.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+            </div>
+            <div class="row col-10 m-auto p-lg-4">
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA3.JPG">
+                        <p class="text-center"><b>Iphone Xr 64Gg<br>11.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA11.JPG">
+                    <p class="text-center"><b>Samsung A32<br>6.290.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtO222.JPG">
+                        <p class="text-center"><b>Oppo Reno4 Pro<br>13.990.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2">
+                    <img class="pc w-100" src="../img/dtA33.JPG">
+                        <p class="text-center"><b>Samsung A31<br>5.590.000 đ</b></p>
+                        <div class="row col-12">
+                            <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                            <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                        </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtA22.JPG">
+                    <p class="text-center"><b>Samsung A51<br>6.990.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtO11.JPG">
+                    <p class="text-center"><b>Oppo A92<br>7.290.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-10 m-auto p-lg-4 ">
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtO22.JPG">
+                    <p class="text-center"><b>Oppo A94<br>4.990.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtO33.JPG">
+                    <p class="text-center"><b>Oppo Reno 4 Pro<br>5.590.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtV1.JPG">
+                    <p class="text-center"><b>Vsmart Joy 4<br>2.190.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtV3.JPG" >
+                    <p class="text-center"><b>Vsmart Star 5<br>2.690.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="pc w-100" src="../img/dtO44.JPG">
+                    <p class="text-center"><b>Oppo A93<br>6.490.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+                <div class="col-2 ">
+                    <img class="pc w-100" src="../img/dtV5.JPG">
+                    <p class="text-center"><b>Vsmart Joy 3<br>2.690.000 đ</b></p>
+                    <div class="row col-12">
+                        <button type="button" class="btn btn-danger w-75 p-1 col-6 them">Thêm</button>
+                        <button type="button" class="btn btn-primary col-6 p-1"><a href="../html/ChiTietSP.html">Chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-auto h-auto col-12">
+            <p><marquee style="color: red;"><i class="fas fa-tags"></i> Chương trình khuyến mãi 30% dành cho Iphone từ 1/6-1/7</marquee></p>
+        </div>
+        <div class="footer row">
+            <div class="row col-8 ml-1 m-auto">
+                <div class="col-3 ">
+                    <br>
+                    <i class="fas fa-question-circle"></i> Câu hỏi tường gặp
+                    <br><br>
+                    <a style="color: blue;" href="#">Giới thiệu trang web</a><br>
+                    <a style="color: blue;" href="#">Chế độ bảo hành?</a><br>
+                    <a style="color: blue;" href="#">Việc thanh toán online?</a><br>
+                    <a style="color: blue;" href="#">Chế độ khuyến mãi</a><br>
+                    <a style="color: blue;" href="#">Liên hệ hợp tác kinh doanh<br>
+                    <a style="color: blue;" href="#">Quy định sau lưu dữ liệu</a><br>
+                </div>
+                <div class="col-3 p-4" >
+                        <p><i class="fas fa-phone-volume"></i><b> Sđt mua hàng: 0379 79 79 79 (8h-22h)</b></p>
+                        <p><i class="fas fa-phone-volume"></i><b> Sđt bảo hành: 0462 523 523 (8h-22h)</b></p>
+                </div>
+                <div class="col-3 ">
+                    <br>
+                    <span >
+                        <i class="fab fa-paypal"></i>
+                        <b>Hỗ trợ thanh toán:</b></span>
+                    <br>
+                    <img src="../img/thanhtoan.JPG"><br><br><br><br>
+                </div>
+                <div class="col-3 p-4">
+                    <i class="fas fa-phone-volume"></i>
+                    <b>Góp ý, khiếu nại</b></span><br><br>
+                    <span >0374123411</span>
+                </div>
+            </div>
+        </div>   
+        <div class="text-center bg-dark" style="margin-bottom:0; color: white;padding:7px;">
+            <p><b>Design by Nguyễn Phú Bình & Nguyễn Tấn Hùng</b></p>
+        </div>
+    </div>
+
+</body>
+</html>
